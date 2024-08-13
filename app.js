@@ -42,7 +42,7 @@ let imagenes = [
 
     },
     {
-        "url": "img/ciscoB.png",
+        "url": "img/credential.webp",
         "nombre": "Banda",
         "descripcion": "Insignia verificada en Credly"
 
