@@ -2,13 +2,13 @@ let imagenes = [
     {
         "url": "img/gym.webp",
         "nombre": "GYM",
-        "descripcion": ""
+        "descripcion": "Ir al gym de Lunes a Sabado por desde las 9am"
 
     },
     {
         "url": "img/JS.webp",
-        "nombre": "JavScript",
-        "descripcion": ""
+        "nombre": "JavaScript",
+        "descripcion": "Aprender mas sobre JS para despues dominar algun framework"
 
     },
     {
@@ -20,31 +20,31 @@ let imagenes = [
     {
         "url": "img/reactJS.webp",
         "nombre": "ReactJS",
-        "descripcion": ""
+        "descripcion": "ReactJS es un framework muy demandado y es de los mas faciles de manejar"
 
     },
     {
         "url": "img/c++.webp",
         "nombre": "C++",
-        "descripcion": ""
+        "descripcion": "Leer sobre C++\n Comunicacion entre Software y Hardware "
 
     },
     {
         "url": "img/c.webp",
         "nombre": "C",
-        "descripcion": ""
+        "descripcion": "Leer sobre C\n Control total con el hardware"
 
     },
     {
         "url": "img/cisco.webp",
-        "nombre": "Cisco",
-        "descripcion": ""
+        "nombre": "Network Addressing and Basic Troubleshooting",
+        "descripcion": "Curso de Verano sobre Direccionamiento Basico y Solucion de Problemas"
 
     },
     {
-        "url": "img/ciscoB.webp",
+        "url": "img/ciscoB.png",
         "nombre": "Banda",
-        "descripcion": ""
+        "descripcion": "Insignia verificada en Credly"
 
     }
 ]
