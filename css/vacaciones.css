@@ -33,7 +33,7 @@ body {
 
 .img {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
-    height: 576px;
+    height: auto;
     width: 1134px;
     border-radius: 15px ;
     margin: 5px;
@@ -88,7 +88,6 @@ body {
     transition: font-size 0s .2s linear;
     font-size: 23px;
     font-weight: 300;
-
     text-shadow: 0px 0px 10px #000000;
 }
 
