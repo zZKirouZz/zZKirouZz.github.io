@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: black;
+    background-image: url(https://www.mlytics.com/wp-content/uploads/2019/06/how-mlytics-mitigated-the-largest-ddos-attacks.jpg);
+    color: rgb(46, 211, 46);
+}
+
+.main-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-wraper h1 {
+    text-align: center;
+}
+
+.wraper-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.provider {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(94, 92, 92, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.provider h2 {
+    margin-bottom: 5px;
+}
+
+.provider ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.imagenes-canva, .provider img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes-canva img, .provider img  {
+    max-width: 100%;
+    height: auto;
+    flex: 1 0 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
