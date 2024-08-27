@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceptual Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .section {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mapa Conceptual Interactivo: Seguridad Nativa en la Nube 2024</h1>
+        <button class="button" onclick="showSection('arquitectura')">Arquitectura Propuesta</button>
+        <button class="button" onclick="showSection('problemas')">Problemáticas y Soluciones</button>
+        <button class="button" onclick="showSection('casos')">Casos Reales de Ciberseguridad</button>
+
+        <div id="arquitectura" class="section">
+            <h2>Arquitectura Propuesta</h2>
+            <p>
+                <strong>Simplificación y Consolidación de Herramientas:</strong> 
+                <ul>
+                    <li>Uso de menos herramientas de seguridad para reducir la complejidad.</li>
+                    <li>Integración de soluciones de seguridad en una plataforma unificada.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Automatización y AI:</strong> 
+                <ul>
+                    <li>Implementación de AI para detectar y responder a amenazas.</li>
+                    <li>Uso de AI para generar código seguro y revisar vulnerabilidades.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Protección de Datos:</strong> 
+                <ul>
+                    <li>Clasificación automática de datos sensibles.</li>
+                    <li>Encriptación y monitoreo continuo de datos en múltiples entornos.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="problemas" class="section">
+            <h2>Problemáticas y Soluciones</h2>
+            <p>
+                <strong>Complejidad en la Gestión de Herramientas de Seguridad:</strong> 
+                <ul>
+                    <li>Solución: Consolidación de herramientas y simplificación de procesos.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Riesgos Asociados con el Código Generado por AI:</strong> 
+                <ul>
+                    <li>Solución: Implementación de revisiones de seguridad automatizadas.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Protección de Datos Sensibles:</strong> 
+                <ul>
+                    <li>Solución: Uso de herramientas de clasificación y encriptación de datos.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Ataques Potenciados por AI:</strong> 
+                <ul>
+                    <li>Solución: Desarrollo de defensas avanzadas contra ataques AI.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="casos" class="section">
+            <h2>Casos Reales de Ciberseguridad</h2>
+            <p>
+                <strong>Caso 1: Ataque de Ransomware en una Empresa Turística en Puerto Vallarta:</strong> 
+                <ul>
+                    <li>Descripción: La empresa sufrió un ataque que cifró sus datos críticos.</li>
+                    <li>Solución: Implementación de backups regulares y entrenamiento en ciberseguridad.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Caso 2: Phishing en una Universidad de Jalisco:</strong> 
+                <ul>
+                    <li>Descripción: Estudiantes y personal recibieron correos fraudulentos.</li>
+                    <li>Solución: Campañas de concienciación y filtros de correo avanzados.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Caso 3: Brecha de Datos en una Institución Financiera en México:</strong> 
+                <ul>
+                    <li>Descripción: Datos sensibles de clientes fueron expuestos.</li>
+                    <li>Solución: Mejora en la encriptación y monitoreo de accesos.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Caso 4: Ataque DDoS a un Servicio de Streaming en México:</strong> 
+                <ul>
+                    <li>Descripción: El servicio fue interrumpido por un ataque masivo.</li>
+                    <li>Solución: Implementación de soluciones anti-DDoS y escalabilidad en la infraestructura.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Caso 5: Vulnerabilidad en una Aplicación de Salud en Jalisco:</strong> 
+                <ul>
+                    <li>Descripción: Se descubrió una vulnerabilidad que permitía el acceso no autorizado.</li>
+                    <li>Solución: Auditorías de seguridad regulares y parches de software.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
