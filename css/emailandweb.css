@@ -1,0 +1,351 @@
+/* :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #ecf0f1;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+    --transition-speed: 0.3s;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../../Files/image.png') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+  }
+  
+  .main-wrapper {
+    min-height: 100vh;
+    background: var(--overlay-color);
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter var(--transition-speed);
+  }
+  
+  .main-wrapper:hover {
+    backdrop-filter: blur(3px);
+  }
+  
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+.main-tittle h3,
+  .email-security-tittle h3,
+  .web-security-tittle h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    transition: transform var(--transition-speed);
+  }
+  
+  .main-tittle h3:hover,
+  .email-security-tittle h3:hover,
+  .web-security-tittle h3:hover {
+    transform: scale(1.05);
+  }
+  
+.email-security,
+  .web-security {
+    background: rgba(44, 62, 80, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .email-security:hover,
+  .web-security:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+  h5 {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    opacity: 0.9;
+    transition: opacity var(--transition-speed);
+  }
+  
+  h5:hover {
+    opacity: 1;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed);
+  }
+  
+  img:hover {
+    transform: scale(1.02);
+  }
+  
+.pkt-downloadable {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .pkt-downloadable a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    background: var(--secondary-color);
+    border-radius: 30px;
+    transition: all var(--transition-speed);
+  }
+  
+  .pkt-downloadable a:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+@media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+    
+    .email-security,
+    .web-security {
+      padding: 1.5rem;
+    }
+    
+    .main-tittle h3,
+    .email-security-tittle h3,
+    .web-security-tittle h3 {
+      font-size: 2rem;
+    }
+  }
+  
+html {
+    scroll-behavior: smooth;
+  }
+
+   */
+
+/* Cisco color palette and variables */
+:root {
+    --cisco-blue: #049fd9;
+    --cisco-dark-blue: #005073;
+    --cisco-gray: #58585b;
+    --cisco-light-gray: #f2f2f2;
+    --cisco-white: #ffffff;
+    --cisco-black: #1e1e1e;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Base styles */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'CiscoSans', Arial, sans-serif;
+    background: url('https://i1.wp.com/static.techbast.com/2019/07/w7kxkRr-1-796x398.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--cisco-black);
+    line-height: 1.6;
+  }
+  
+  /* Main wrapper with overlay */
+  .main-wrapper {
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Main content container */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Main titles */
+  .main-tittle h3,
+  .email-security-tittle h3,
+  .web-security-tittle h3 {
+    color: var(--cisco-dark-blue);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--cisco-blue);
+    transition: color var(--transition-speed);
+  }
+  
+  /* Section titles */
+  [class$="-title"] h3 {
+    color: var(--cisco-blue);
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    transition: color var(--transition-speed);
+  }
+  
+  /* Content sections */
+  .email-security,
+  .web-security {
+    /* background: var(--cisco-white); */
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+  }
+  
+  .email-security:hover,
+  .web-security:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Paragraph containers */
+  [class$="-paragraph"] {
+    /* background: var(--cisco-light-gray); */
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    transition: transform var(--transition-speed);
+  }
+  
+  [class$="-paragraph"]:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Text content */
+  h5 {
+    color: var(--cisco-gray);
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+  
+  /* Images */
+  img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+  }
+  
+  img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Download link */
+  .pkt-downloadable {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  .pkt-downloadable a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cisco-white);
+    background: var(--cisco-blue);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all var(--transition-speed);
+  }
+  
+  .pkt-downloadable a:hover {
+    background: var(--cisco-dark-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(4, 159, 217, 0.3);
+  }
+  
+  .pkt-downloadable h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Content sections layout */
+  .email-security-content,
+  .web-security-content {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .email-workship,
+  .protect-email,
+  .web-workship,
+  .web-protection {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+    
+    .main-tittle h3,
+    .email-security-tittle h3,
+    .web-security-tittle h3 {
+      font-size: 2rem;
+    }
+    
+    [class$="-title"] h3 {
+      font-size: 1.5rem;
+    }
+    
+    img {
+      max-width: 95%;
+    }
+    
+    .email-security,
+    .web-security {
+      padding: 1rem;
+    }
+    
+    [class$="-paragraph"] {
+      padding: 1rem;
+    }
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
